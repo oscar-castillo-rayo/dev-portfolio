@@ -1,0 +1,106 @@
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  padding: 0 1rem;
+}
+.work-experience {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.title-heading {
+  width: 100%;
+}
+
+.sub-title {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.line {
+  width: 100%;
+  border: none;
+  border-top: 0.5px solid var(--accent-color);
+  color: var(--text-primary);
+}
+
+/*WorkEperience component*/
+.experience-content {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.date-experience {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.year-experience {
+  position: relative;
+}
+.month-experience {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.date-hr {
+  width: 100px;
+  margin: 0.5rem 0 0.6rem 0;
+  color: var(--text-secondary);
+}
+
+.company {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  font-family: sans-serif;
+}
+.cv-content {
+  border-left: 2px solid var(--accent-color);
+  padding-left: 1rem;
+}
+
+.cv-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+/* between (769px-1280px) */
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .skills-section {
+    padding: 0 5rem;
+  }
+}
+
+/* Screen more than 1280px */
+@media screen and (min-width: 1281px) {
+  .skills-section {
+    padding: 0 10rem;
+  }
+}
+
+/* more than 1280px */
+@media screen and (max-width: 1280px) {
+  .work-experience {
+    justify-content: center;
+  }
+}

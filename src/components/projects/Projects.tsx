@@ -52,10 +52,15 @@ const Projects = () => {
     //   url: "#",
     // },
   ];
+  console.log("projects.length", projects.length);
   return (
     <section id="projects" className="projects">
       <h2 className="section-title">My Projects</h2>
-      <div className="projects-grid">
+      <div
+        className={`projects-grid ${
+          projects.length >= 3 ? "many-items" : "few-items"
+        }`}
+      >
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

@@ -1,7 +1,22 @@
+.projects {
+  padding: 4rem 0;
+}
+
+.projects h2 {
+  padding: 0 1rem;
+}
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
   gap: 2rem;
+}
+
+.few-items {
+  grid-template-columns: repeat(3, 300px);
+}
+
+.many-items {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .project-card {
@@ -80,4 +95,34 @@
 .more-projects {
   text-align: center;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
+
+/* (769px-1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects {
+    padding: 4rem 5%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .few-items {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .many-items {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .projects {
+    padding: 5rem 10%;
+  }
 }
