@@ -1,4 +1,5 @@
-import pdfResume from "../../public/documents/Oscar_Manuel_Castillo_Rayo_Resume.pdf";
+import pdfResume from "/documents/Oscar_Manuel_Castillo_Rayo_Resume.pdf";
+import "./Hero.css";
 
 const ResumeDownloadButton = () => {
   const handleDownload = () => {
@@ -11,10 +12,7 @@ const ResumeDownloadButton = () => {
   };
   return (
     <>
-      <button
-        onClick={handleDownload}
-        className="bg-blue-400  hover:bg-blue-500 font-bold py-2 px-4 rounded flex items-center"
-      >
+      <button onClick={handleDownload} className="cv-button">
         <svg
           className="w-4 h-4 mr-2"
           fill="currentColor"

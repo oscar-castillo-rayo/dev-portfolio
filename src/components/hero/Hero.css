@@ -75,3 +75,18 @@
   opacity: 0.8;
   overflow: hidden;
 }
+
+.cv-button {
+  background-color: var(--accent-color);
+  color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px solid var(--accent-color);
+}

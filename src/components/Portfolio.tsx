@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { About, Contact, Footer, Header, Hero, Projects, Skills } from ".";
-import "../styles.css";
+import "../index.css";
 import "./Portfolio.css";
 import { useThemeStore } from "../store/themeStore";
 

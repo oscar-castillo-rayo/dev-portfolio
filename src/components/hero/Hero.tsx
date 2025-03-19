@@ -1,15 +1,13 @@
 import "./Hero.css";
-// import { useTypingEffect } from "../../helpers/hooks/useTipingEffect";
+import { useTypingEffect } from "../../helpers/hooks/useTipingEffect";
 import ResumeDownloadButton from "./ResumeDownloadButton";
 import profileImage from "../../assets/profilePhoto.jpg";
 const Hero = () => {
-  const BASE_URL = import.meta.env.VITE_BASE_URL || ".";
-  // const { text, cursorElement } = useTypingEffect([
-  //   "Developer",
-  //   "Student",
-  //   "Good Learner",
-  //   "lover of technology",
-  // ]);
+  const { text, cursorElement } = useTypingEffect([
+    "Developer",
+    "Student",
+    "Good Learner",
+  ]);
 
   return (
     <section id="home" className="hero">
@@ -19,7 +17,9 @@ const Hero = () => {
         </h1>
         <h2 className="hero-subtitle">
           I'm a{" "}
-          <span className="dev-info">{/* {`${text}`} {cursorElement} */}</span>
+          <span className="dev-info">
+            {`${text}`} {cursorElement}
+          </span>
         </h2>
         <div className="hero-buttons">
           <a href="#projects" className="btn-secondary btn-contact-me">
