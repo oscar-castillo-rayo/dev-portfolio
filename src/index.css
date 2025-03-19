@@ -116,3 +116,12 @@ a:hover {
 section {
   padding: 5rem 10%;
 }
+
+.boton-to-top {
+  color: var(--accent-color);
+  background: var(--bg-secondary);
+}
+
+.boton-to-top:hover {
+  color: var(--accent-hover);
+}

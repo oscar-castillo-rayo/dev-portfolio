@@ -3,6 +3,7 @@ import { About, Contact, Footer, Header, Hero, Projects, Skills } from ".";
 import "../index.css";
 import "./Portfolio.css";
 import { useThemeStore } from "../store/themeStore";
+import ButtonToTop from "../helpers/tools/ButtonToTop";
 
 function Portfolio() {
   const { darkMode } = useThemeStore();
@@ -21,19 +22,22 @@ function Portfolio() {
   }, [darkMode]);
 
   return (
-    <div className={`portfolio ${darkMode ? "dark-theme" : "light-theme"}`}>
-      <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-      <div className="background">
-        <div className="gradient-decoration decoration-1"></div>
-        <div className="gradient-decoration decoration-2"></div>
+    <>
+      <div className={`portfolio ${darkMode ? "dark-theme" : "light-theme"}`}>
+        <Header />
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
+        <div className="background">
+          <div className="gradient-decoration decoration-1"></div>
+          <div className="gradient-decoration decoration-2"></div>
+        </div>
       </div>
-    </div>
+      <ButtonToTop />
+    </>
   );
 }
 
