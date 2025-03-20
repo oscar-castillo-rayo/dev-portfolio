@@ -94,7 +94,7 @@
 /* Screen more than 1280px */
 @media screen and (min-width: 1281px) {
   .skills-section {
-    padding: 0 10rem;
+    padding: 5rem 10rem 0 10rem;
   }
 }
 

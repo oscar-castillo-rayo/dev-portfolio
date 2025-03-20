@@ -1,3 +1,4 @@
+import SkillComponent from "./SkillComponent";
 import "./Skills.css";
 import WorkExperience from "./WorkExperience";
 
@@ -42,19 +43,32 @@ const WorkExperiences = [
 
 const Skills = () => {
   return (
-    <div className="skills-section">
-      <div className="work-experience container row-auto ">
-        <div className="title-heading">
-          <p className="sub-title mb-0">My Background</p>
-          <h3 className="title m-0 uppercase">Work Experience</h3>
-          <hr className="line" />
+    <>
+      <div id="skills" className="skills-section">
+        <div className="work-experience container row-auto ">
+          <div className="title-heading">
+            <p className="sub-title mb-0">What I'm best at</p>
+            <h3 className="title m-0 uppercase">Skills & Knowledge</h3>
+            <hr className="line" />
+          </div>
+          <div className="skills-section">
+            <SkillComponent />
+          </div>
         </div>
-
-        {WorkExperiences.map((workExperience) => (
-          <WorkExperience key={workExperience.id} {...workExperience} />
-        ))}
       </div>
-    </div>
+      <div id="WorkExperience" className="skills-section">
+        <div className="work-experience container row-auto ">
+          <div className="title-heading">
+            <p className="sub-title mb-0">My Background</p>
+            <h3 className="title m-0 uppercase">Work Experience</h3>
+            <hr className="line" />
+          </div>
+          {WorkExperiences.map((workExperience) => (
+            <WorkExperience key={workExperience.id} {...workExperience} />
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

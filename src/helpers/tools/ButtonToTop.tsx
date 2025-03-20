@@ -7,7 +7,7 @@ const ButtonToTop = () => {
       window.addEventListener("scroll", () => {
         let button = document.getElementById("buttonToTop");
         if (button) {
-          if (window.scrollY > 150) {
+          if (window.scrollY > 500) {
             button.style.display = "block";
           } else {
             button.style.display = "none";

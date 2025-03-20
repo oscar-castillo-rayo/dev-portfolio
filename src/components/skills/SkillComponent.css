@@ -1,0 +1,95 @@
+.skill-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin: 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  height: 50px;
+  width: 50px;
+}
+
+.skill-container,
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Skills */
+.react-icon:hover {
+  color: #61dafb;
+}
+
+.html-icon:hover {
+  color: #e34f26;
+}
+
+.css-icon:hover {
+  color: #1572b6;
+}
+
+.js-icon:hover {
+  color: #f7df1e;
+}
+
+.tailwind-icon:hover {
+  color: #06b6d4;
+}
+
+.git-icon:hover {
+  color: #f05032;
+}
+
+.csharp-icon:hover {
+  color: #9b4f96;
+}
+
+.cypress-icon:hover {
+  color: #22b785;
+}
+
+.bootstrap-icon:hover {
+  color: #7952b3;
+}
+
+/*tools */
+.github-icon:hover {
+  color: var(--primary-color);
+}
+
+.docker-icon:hover {
+  color: #2496ed;
+}
+
+.mysql-icon:hover {
+  color: #4479a1;
+}
+
+.notion-icon:hover {
+  color: #000000;
+}
+
+.vscode-icon:hover {
+  color: #007acc;
+}
+
+.visualstudio-icon:hover {
+  color: #5c2d91;
+}
+
+.postman-icon:hover {
+  color: #ff6c37;
+}
