@@ -76,6 +76,7 @@
 .cv-content {
   border-left: 2px solid var(--accent-color);
   padding-left: 1rem;
+  margin-top: 0.5rem;
 }
 
 .cv-description {

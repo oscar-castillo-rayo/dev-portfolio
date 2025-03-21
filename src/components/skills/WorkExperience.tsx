@@ -6,6 +6,8 @@ interface WorkExperienceProps {
   company: string;
   position: string;
   description: string;
+  knowledge: string;
+  knowledgeDescription: string;
 }
 
 const WorkExperience = ({
@@ -16,6 +18,8 @@ const WorkExperience = ({
   company,
   position,
   description,
+  knowledge,
+  knowledgeDescription,
 }: WorkExperienceProps) => {
   return (
     <div className="grid grid-cols-12 gap-4 max-w-7xl w-full experience-content">
@@ -39,8 +43,12 @@ const WorkExperience = ({
 
       <div className="col-span-12 md:col-span-8">
         <div className="cv-content">
-          <h4 className="mb-0 mt-0">{position}</h4>
+          <h4>{position}</h4>
           <p className="cv-description">{description}</p>
+        </div>
+        <div className="cv-content">
+          <h4>{knowledge}</h4>
+          <p className="cv-description">{knowledgeDescription}</p>
         </div>
       </div>
     </div>

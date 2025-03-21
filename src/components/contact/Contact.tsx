@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./Contact.css";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithubSquare } from "react-icons/fa";
+import ContactCard from "./ContactCard";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,47 +35,51 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h2 className="section-title">Contact</h2>
-      <div className="contact-container">
+      <div className="contact-container ">
         <div className="contact-info">
           <h3 className="uppercase">get in touch</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-            rem blanditiis officiis architecto ducimus est voluptate perferendis
-            rerum numquam quam? Iusto tempora velit repudiandae architecto,
-            suscipit eveniet mollitia quasi enim?
+            I'm always available to address your questions and concerns. Whether
+            you need information, assistance, or just want to connect, don't
+            hesitate to reach out through any of the communication channels
+            below.
           </p>
           <div className="contact-details">
             <div className="contact-item">
-              <span className="contact-icon">📧</span>
-              <span className="concact-email">manuel.rayo3@gmail.com</span>
+              <span className="contact-item-name">Email: </span>
+              <span>
+                <ContactCard contactInformation="manuel.rayo3@gmail.com" />
+              </span>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">☎️</span>
-              <span className="concact-email">+506 60099234</span>
+              <span className="contact-item-name">Phone Number: </span>
+              <ContactCard contactInformation="+506 60099234" />
             </div>
             <div className="contact-item">
-              <span className="contact-icon">📍</span>
-              <span className="concact-email">Costa Rica</span>
+              <span className="contact-item-name">Country: </span>
+              <span className="font-bold">Costa Rica </span>
             </div>
           </div>
           <div className="social-links">
-            <a href="#" className="social-link">
-              LinkedIn
+            <a
+              href="https://www.linkedin.com/in/oscar-manuel-castillo-rayo-34a552255/"
+              className="social-link"
+            >
+              <FaLinkedin /> LinkedIn
             </a>
-            <a href="#" className="social-link">
-              GitHub
+            <a
+              href="https://github.com/oscar-castillo-rayo"
+              className="social-link"
+            >
+              <FaGithubSquare /> GitHub
             </a>
-            <a href="#" className="social-link">
+            {/* <a href="#" className="social-link">
               Twitter
-            </a>
+            </a> */}
           </div>
         </div>
-        <div className="contact-form">
-          {submitSuccess && (
-            <div className="success-message">
-              ¡Email sent successful! Thank you, I will contact you soon!.
-            </div>
-          )}
+        <div className="contact-form ">
+          <h3 className="uppercase">Feel free to contact me anytime</h3>
           <form
             action="https://formsubmit.co/manuel.rayo3@gmail.com"
             method="POST"
@@ -94,10 +101,10 @@ const Contact = () => {
               <label htmlFor="email">Email</label>
               <input type="email" id="email" name="email" required />{" "}
             </div>
-            <div className="form-group">
+            {/* <div className="form-group">
               <label htmlFor="subject">subject</label>
               <input type="text" id="subject" name="subject" required />
-            </div>
+            </div> */}
             <div className="form-group">
               <label htmlFor="message">message</label>
               <textarea
@@ -108,13 +115,20 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <button
-              type="submit"
-              className="btn btn-primary send-button"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? "Sending..." : "Send"}
-            </button>
+            <div className="button-container">
+              {!submitSuccess && (
+                <div className="success-message">
+                  ¡Email sent successful! Thank you, I will contact you soon!.
+                </div>
+              )}
+              <button
+                type="submit"
+                className="btn btn-primary send-button"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Send"}
+              </button>
+            </div>
           </form>
         </div>
       </div>

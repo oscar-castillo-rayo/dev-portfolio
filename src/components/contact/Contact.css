@@ -1,10 +1,21 @@
 .contact-container {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.contact-info h3 {
+.contact-info,
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 4px;
+  background-color: var(--bg-secondary);
+}
+
+.contact-info h3,
+.contact-form h3 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
@@ -20,26 +31,40 @@
 
 .contact-item {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 5px;
   margin-bottom: 1rem;
+  background-color: var(--input-bg);
 }
 
-.contact-icon {
-  font-size: 1.5rem;
-  margin-right: 1rem;
+.contact-item-name {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  -webkit-background-clip: text;
 }
 
 .social-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
 .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   background-color: var(--accent-color);
-  color: white;
+  color: var(--text-primary);
+}
+
+.social-link:hover {
+  background-color: var(--accent-hover);
+  color: var(--text-primary);
 }
 
 .form-group {
@@ -68,10 +93,15 @@ textarea:focus {
   outline: none;
   border-color: var(--accent-color);
 }
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
 
 .send-button {
   display: inline-block;
-  padding: 0.8rem 2.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 4px;
   background-color: var(--accent-color);
   color: white;
@@ -80,18 +110,13 @@ textarea:focus {
   transition: var(--transition);
   margin-left: auto;
 }
-
-@media screen and (min-width: 768px) {
-  .contact-info {
-    flex: 1;
-  }
-
-  .contact-form {
-    flex: 1;
-  }
+.send-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .success-message {
+  z-index: 10;
   background-color: #d4edda;
   color: #155724;
   padding: 10px;
@@ -99,9 +124,4 @@ textarea:focus {
   border-radius: 4px;
   text-align: center;
   border: 1px solid #c3e6cb;
-}
-
-.send-button:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
 }

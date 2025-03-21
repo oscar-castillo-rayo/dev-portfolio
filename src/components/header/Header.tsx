@@ -80,22 +80,34 @@ const Header = () => {
         >
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="#home" onClick={() => setIsMenuOpen(false)}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about">About Me</a>
+              <a href="#about" onClick={() => setIsMenuOpen(false)}>
+                About Me
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={() => setIsMenuOpen(false)}>
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={() => setIsMenuOpen(false)}>
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#WorkExperience">Experience</a>
+              <a href="#WorkExperience" onClick={() => setIsMenuOpen(false)}>
+                Experience
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+                Contact
+              </a>
             </li>
           </ul>
           {isMobile && <DarkModeButton />}

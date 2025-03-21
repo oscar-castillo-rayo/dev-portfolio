@@ -7,27 +7,32 @@ const About = () => {
       <div className="about-content">
         <div className="about-text">
           <p>
-            I am a passionate web developer dedicated to creating impactful
-            projects and delivering exceptional results. With expertise in
-            modern web technologies like React, TypeScript, and C#. I
-            continuously seek opportunities to expand my skills and tackle new
-            challenges.
+            I am a passionate and self-taught web developer who has mastered
+            technologies such as React, TypeScript, and C# through my own
+            learning journey. I am excited about being part of innovative
+            development teams and committed to continuously improving my
+            technical skills, constantly seeking opportunities to apply my
+            knowledge and face new challenges that allow me to grow
+            professionally.
           </p>
           <br />
           <div className="about-values">
             <h2 className="section-title section-values">My Values</h2>
             <p>
-              I build my career on three core principles: responsibility,
-              commitment, and effective communication. These values drive me to
-              not only meet but exceed expectations in every project, ensuring
-              that I bring extra value to every team I collaborate with.
+              My professional approach is based on three core principles:
+              responsibility, commitment, and effective communication. I have
+              developed discipline and problem-solving abilities that add value
+              to any team. This journey has taught me to strive to exceed
+              expectations in every project.
             </p>
             <h2 className="section-title section-vision">My Vision</h2>
             <p>
-              I thrive on continuous growth and fostering collaboration within
-              dynamic teams. By building trust-based relationships, I focus on
-              generating meaningful impact through innovative solutions and
-              shared success.
+              I seek environments where I can continue learning while working
+              with dynamic teams that value initiative and new ideas. My path
+              has enabled me to identify opportunities for improvement and
+              propose creative solutions. I believe in building working
+              relationships based on trust and commitment to results that
+              generate real impact.
             </p>
           </div>
         </div>

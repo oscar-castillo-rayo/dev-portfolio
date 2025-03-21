@@ -5,8 +5,8 @@ import profileImage from "../../assets/profilePhoto.jpg";
 const Hero = () => {
   const { text, cursorElement } = useTypingEffect([
     "Developer",
-    "Student",
-    "Good Learner",
+    "Self-taught",
+    "Tech Enthusiast",
   ]);
 
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
         </h1>
         <h2 className="hero-subtitle">
           I'm a{" "}
-          <span className="dev-info">
+          <span className="dev-text">
             {`${text}`} {cursorElement}
           </span>
         </h2>
